@@ -1,0 +1,56 @@
+﻿@{
+    
+}
+
+<h3>Menu de la Empresas</h3>
+<ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item active"><i class="fas fa-details"></i></li>
+</ol>
+<div class="row">
+   <div class="col-4">
+        <div id="Colorblack" class="card  text-white mb-4">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div id="divempleado">Total Empleados</div>
+                    @{if (ViewBag.CantidadEmpleado!=null)
+                    {
+                                 <div id="total-empleados">@ViewBag.CantidadEmpleado</div>
+                    }}
+                </div>
+            </div>
+            <div class="card-footer d-flex align-items-center justify-content-between">
+                <a class="small text-white stretched-link" href="@Url.Action("Index","Empleados")">Ver Detalles</a>
+                <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+            </div>
+        </div>
+    </div>
+
+      <div class="col-4">
+        <div id="Colorblack" class="card  text-white mb-4">
+            <div class="card-body">
+                <div class="d-flex  justify-content-between">
+                    <div id="divempleado" class="align-items-center">
+                    <span>Cantidad Departamento</span>
+                    </div>
+                    @{if (ViewBag.CantidadDepartamento!=null)
+                       {
+                      <div id="total-marcas">@ViewBag.CantidadDepartamento</div>
+                       }
+                     }
+                    </div>
+                </div>
+                <div  class="card-footer d-flex align-items-center justify-content-between">
+                    <a class="small text-white stretched-link" href="@Url.Action("Index","Departamento")">Ver Detalles</a>
+                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+   
+
+
+    @section Styles{
+        <link rel="stylesheet" href="~/css/Home/Home.css" asp-append-version="true"/>
+
+    }

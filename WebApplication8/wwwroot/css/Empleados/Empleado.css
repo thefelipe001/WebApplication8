@@ -1,0 +1,218 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+.mb-4 {
+    background-color: mintcream;
+    margin-bottom: 1.5rem !important;
+}
+
+
+thead{
+    background-color:cornflowerblue;
+}
+
+
+/**/
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    font-family: Helvetica;
+    margin-top: -600px;
+}
+
+.loader {
+    height: 20px;
+    width: 250px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.loader--dot {
+    animation-name: loader;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: black;
+    position: absolute;
+    border: 2px solid white;
+}
+
+    .loader--dot:first-child {
+        background-color: #8cc759;
+        animation-delay: 0.5s;
+    }
+
+    .loader--dot:nth-child(2) {
+        background-color: #8c6daf;
+        animation-delay: 0.4s;
+    }
+
+    .loader--dot:nth-child(3) {
+        background-color: #ef5d74;
+        animation-delay: 0.3s;
+    }
+
+    .loader--dot:nth-child(4) {
+        background-color: #f9a74b;
+        animation-delay: 0.2s;
+    }
+
+    .loader--dot:nth-child(5) {
+        background-color: #60beeb;
+        animation-delay: 0.1s;
+    }
+
+    .loader--dot:nth-child(6) {
+        background-color: #fbef5a;
+        animation-delay: 0s;
+    }
+
+.loader--text {
+    position: absolute;
+    top: 200%;
+    left: 0;
+    right: 0;
+    width: 4rem;
+    margin: auto;
+}
+
+    .loader--text:after {
+        content: "Loading";
+        font-weight: bold;
+        animation-name: loading-text;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+
+@keyframes loader {
+    15% {
+        transform: translateX(0);
+    }
+
+    45% {
+        transform: translateX(230px);
+    }
+
+    65% {
+        transform: translateX(230px);
+    }
+
+    95% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes loading-text {
+    0% {
+        content: "Loading";
+    }
+
+    25% {
+        content: "Loading.";
+    }
+
+    50% {
+        content: "Loading..";
+    }
+
+    75% {
+        content: "Loading...";
+    }
+}
+
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+.diseño {
+    overflow-x: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    margin-top:20px;
+    border: 1px solid #ddd;
+}
+
+.xyz {
+    background-size: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.btn-circle.btn-sm {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    font-size: 8px;
+    text-align: center;
+}
+
+.btn-circle.btn-md {
+    width: 50px;
+    height: 50px;
+    padding: 7px 10px;
+    border-radius: 25px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 12px;
+    text-align: center;
+}
+
+#button {
+    float: right;
+    background-color: cornflowerblue;
+    margin-top: 45px;
+}
+tbody{
+    background-color:darkgray;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.input-group {
+    width: 255px;
+    margin-left: 50%;
+}
+
+/*Filter*/
+#searchInput {
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+   #searchInput:focus {
+        border-bottom: 2px solid #4575b6;
+   }
+   label{
+       font-weight:bold
+   }

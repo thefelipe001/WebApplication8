@@ -1,0 +1,37 @@
+﻿h3 {
+    text-align: center;
+    margin-top: 28px;
+    font-family: fantasy;
+    height: 1px;
+}
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+    background-color: #BDC207;
+}
+h7 {
+    text-align: center;
+    color:red
+}
+
+.stretched-link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: "";
+}
+#Colorblack {
+    background-color: black;
+    color: red
+}
+
+#divempleado {
+    display: flex;
+    align-items: center;
+}
+.card-footer:last-child {
+    border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
+    background-color:red;
+}

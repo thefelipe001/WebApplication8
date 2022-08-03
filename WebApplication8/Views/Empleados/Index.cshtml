@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<ol class="breadcrumb mb-4 mt-4">
+    <li class="breadcrumb-item"><a href="index.html">Mantenedores</a></li>
+    <li class="breadcrumb-item active">Empleados</li>
+</ol>
+
+    <div class="card-header">
+        <i class="fas fa-table me-1"></i> Listado de Empleados
+    </div>
+<div class="diseño">
+    <div class="card mb-4">
+           <input type="text" class="form-control" id="searchInput" placeholder="Consultar Empleado...">
+
+         <table class="table table-striped table-bordered">
+            <thead >
+                <tr>
+                    <th>ID</th>
+                    <th>Nombres</th>
+                    <th>Apellidos</th>
+                    <th>Email</th>
+                    <th>Direccion</th>
+                    <th>Celular</th>
+                    <th>Departamento</th>
+                </tr>
+            </thead>
+            <tbody class="tbody">  
+  
+            </tbody> 
+        </table>
+        <div id="container" class='container'>
+              <div class='loader'>
+                   <div class='loader--dot'></div>
+                   <div class='loader--dot'></div>
+                   <div class='loader--dot'></div>
+                   <div class='loader--dot'></div>
+                   <div class='loader--dot'></div>
+                   <div class='loader--dot'></div>
+                   <div class='loader--text'></div>
+              </div>
+        </div>
+
+    </div>
+
+</div>
+    <button id="button" title="Add New Empleado" type="button" class="btn btn-danger btn-circle btn-xl" onclick="location.href='/Empleados/Crear'"><i class="fa fa-plus"></i></button>
+
+</body>
+</html>
+
+
+  @section Styles{
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="~/css/Empleados/Empleado.css" asp-append-version="true"/>
+
+    }
+
+    
+    @section Scripts{
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="~/js/Empleados/Empleados.js" asp-append-version="true"></script>
+    }
+
